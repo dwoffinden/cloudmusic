@@ -1,0 +1,15 @@
+*.o
+*.class
+
+*.aux
+*.log
+*.out
+*.synctex.gz
+
+/.idea/
+/.idea_modules/
+/project/project/
+/project/target/
+/target/
+/submission/
+/lib_managed/
