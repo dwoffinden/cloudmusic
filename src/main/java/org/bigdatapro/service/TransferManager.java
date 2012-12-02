@@ -19,7 +19,7 @@ public class TransferManager {
 
     // Load S3 access and secret keys from the property file
     public static AWSCredentials loadKeys() throws IOException{
-        InputStream propertiesIS = TransferManager.class.getClassLoader().getSystemResourceAsStream(SAMPLES_PROPERTIES_NAME);
+        InputStream propertiesIS = TransferManager.class.getResourceAsStream(SAMPLES_PROPERTIES_NAME);
         if(propertiesIS == null) {
             throw new RuntimeException("property file is not existed");
         }
