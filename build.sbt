@@ -2,7 +2,9 @@ seq(webSettings :_*)
 
 name := "335-cwk"
 
-version := "1.0.0"
+autoScalaLibrary := false
+
+port in container.Configuration := 8080
 
 resolvers += "jets3t" at "http://www.jets3t.org/maven2"
 
