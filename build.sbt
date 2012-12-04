@@ -2,6 +2,8 @@ seq(webSettings :_*)
 
 name := "cloudmusic"
 
+javacOptions ++= Seq("-source", "1.6", "-target", "1.6")
+
 autoScalaLibrary := false
 
 port in container.Configuration := 8080
