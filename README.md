@@ -25,13 +25,13 @@ There exist plugins for SBT to generate projects for
 Deployment
 ----------
 On a lab machine/shell, run `mktomcat7 TOMCATDIR`. This produces a personal
-Tomcat directory called tomcatdir and you can change the port by editing conf/server.xml and
+Tomcat directory called TOMCATDIR and you can change the port by editing conf/server.xml and
 changing the value in the Connector tag lower down, NOT in the Server tag.
 
 When you want to deploy a new version:
 
-1. Using SBT create the WAR file, `sbt package`.
-2. `mv target/scala_*/cloudmusic*.war TOMCATDIR/webapps`.
-3. In tomcatdir run `tomcat7 run`.
+1. Create the WAR file with `sbt package`.
+2. `mv target/scala_*/cloudmusic*.war TOMCATDIR/webapps/cloudmusic.war`.
+3. In TOMCATDIR run `tomcat7 run`.
 
 An example http request would be http://localhost:59999/cloudmusic/MusicManagementService?action=fetchplaylists
