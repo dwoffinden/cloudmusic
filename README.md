@@ -1,9 +1,9 @@
 Distributed Systems Sample Code
 ===============================
 
-This is an improved version of the Distributed Systems sample code. This
-actually deploys to Personal Tomcat correctly and reads credentials from
-s3credentials.properties. Pull requests are welcome for improvements but
+This is an improved version of the Distributed Systems sample code. It builds
+with SBT, actually deploys to Personal Tomcat correctly and reads credentials
+from s3credentials.properties. Pull requests are welcome for improvements but
 obviously not for implemented solutions.
 
 SBT
@@ -11,12 +11,16 @@ SBT
 
 First, grab [SBT](http://www.scala-sbt.org/release/docs/Getting-Started/Setup.html).
 
-You can deploy the project a local server by typing `container:start` at the `sbt` prompt.
-This will launch a jetty instance that will persist as long as the sbt shell is open, with the page accessable from http://localhost:8080.
+You can deploy the project a local server by typing `container:start` at the
+`sbt` prompt. This will launch a jetty instance that will persist as long as
+the sbt shell is open, with the page accessable from http://localhost:8080.
 
 You can create a `.war` file by running `sbt package`, which is ready for deployment (see below).
 
-There exist plugins for SBT to generate projects for Eclipse, Netbeans and Intellij, just google :)
+There exist plugins for SBT to generate projects for
+[Eclipse](https://github.com/typesafehub/sbteclipse),
+[Netbeans](https://github.com/remeniuk/sbt-netbeans-plugin) and
+[Intellij](https://github.com/mpeltonen/sbt-idea) if you so desire.
 
 Deployment
 ----------
@@ -30,4 +34,4 @@ When you want to deploy a new version:
 2. `mv target/scala_*/cloudmusic*.war TOMCATDIR/webapps`.
 3. In tomcatdir run `tomcat7 run`.
 
-An example http request would be http://localhost:59999/CloudMusic/MusicManagementService?action=fetchplaylists
+An example http request would be http://localhost:59999/cloudmusic/MusicManagementService?action=fetchplaylists
