@@ -28,6 +28,6 @@ When you want to deploy a new version:
 
 1. Using SBT create the WAR file, `sbt package`.
 2. `mv target/scala_*/cloudmusic*.war TOMCATDIR/webapps`.
-3. In tomcatdir run tomcat7 run.
+3. In tomcatdir run `tomcat7 run`.
 
 An example http request would be http://localhost:59999/CloudMusic/MusicManagementService?action=fetchplaylists
