@@ -32,7 +32,7 @@ changing the value in the Connector tag lower down, NOT in the Server tag.
 When you want to deploy a new version:
 
 1. Create the WAR file with `sbt package`.
-2. `mv target/scala_*/cloudmusic*.war TOMCATDIR/webapps/cloudmusic.war`.
+2. `mv target/scala*/cloudmusic*.war TOMCATDIR/webapps/cloudmusic.war`.
 3. In TOMCATDIR run `tomcat7 run`.
 
 An example http request would be http://localhost:59999/cloudmusic/MusicManagementService?action=fetchplaylists
