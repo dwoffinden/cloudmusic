@@ -9,7 +9,7 @@ javacOptions ++= Seq(
 
 autoScalaLibrary := false
 
-port in container.Configuration := 8080
+port in container.Configuration := 55580
 
 libraryDependencies ++= Seq(
   "org.eclipse.jetty" % "jetty-webapp" % "8.1.8.v20121106" % "container",

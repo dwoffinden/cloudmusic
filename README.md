@@ -13,7 +13,8 @@ First, grab [SBT](http://www.scala-sbt.org/release/docs/Getting-Started/Setup.ht
 
 You can deploy the project a local server by typing `container:start` at the
 `sbt` prompt. This will launch a jetty instance that will persist as long as
-the sbt shell is open, with the page accessable from http://localhost:8080.
+the sbt shell is open, with the page accessable from http://localhost:55580
+(the port can be changed in `build.sbt`).
 
 You can create a `.war` file by running `sbt package`, which is ready for deployment (see below).
 
