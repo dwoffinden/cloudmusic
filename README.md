@@ -24,7 +24,7 @@ There exist plugins for SBT to generate projects for
 [Netbeans](https://github.com/remeniuk/sbt-netbeans-plugin) and
 [Intellij](https://github.com/mpeltonen/sbt-idea) if you so desire.
 
-I highly reccomend that you change the credentials in
+I highly recommend that you change the credentials in
 `src/main/resources/org/bigdatapro/service/s3credentials.properties`
 to a new account, as the default account gets really slow as more people use it.
 
